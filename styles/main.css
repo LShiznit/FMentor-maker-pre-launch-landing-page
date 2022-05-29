@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* COLOR VARIABLES */
+  --bg-primary: #3ee9e5;
+  --bg-secondary: #093f68;
+  --bg-page: #080c20;
+  --fs-color: #6e768a;
+  --fp-color: #ffffff;
+  --fe-color: #ff2965;
+}
+
+html,
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  background-color: var(--bg-page);
+  color: var(--fp-color);
+  /* height: 100vh; */
+  width: 100vw;
+  overflow-x: hidden;
+}
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 56px;
+  font-weight: 900;
+}
+h2 {
+  font-size: 2.6rem;
+  font-weight: 900;
+}
+h3 {
+  font-size: 2.1rem;
+  font-weight: 900;
+}
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.py-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.py-4 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.py-5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.extrabold {
+  font-weight: 900;
+}
+.m-font {
+  font-size: 18px;
+  font-weight: 900;
+}
+.l-font {
+  font-size: 32px;
+  font-weight: 900;
+}
+.xl-font {
+  font-size: 40px;
+  font-weight: 900;
+}
+.xxl-font {
+  font-size: 48px;
+  font-weight: 900;
+}
+.fp-col {
+  color: var(--fp-color);
+}
+.fb-col {
+  color: var(--bg-page);
+}
+.fs-col {
+  color: var(--fs-color);
+}
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+/* *** HEADER SECTION *** */
+#logo {
+  width: 120px;
+  height: 100px;
+  background-image: url(/assets/logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* MAIN SECTION */
+main .container {
+  display: block;
+  position: relative;
+  padding: 3rem 0;
+}
+
+main .container .flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-content {
+  width: 550px;
+  margin: 0 auto;
+  padding: 5rem 0;
+  background-image: url(../assets/bg-hero-squiggle.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#hero-content h1 {
+  padding: 2rem 0;
+  text-align: center;
+}
+#hero-content h1 span {
+  color: var(--bg-primary);
+}
+#hero-content p {
+  padding-bottom: 4rem;
+  color: var(--fs-color);
+  text-align: center;
+}
+#hero-content #logo-scroll {
+  width: 26px;
+  height: 42px;
+  background-image: url(../assets/icon-scroll.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#hero-left {
+  position: absolute;
+  left: -18%;
+  width: 408px;
+  height: 459px;
+  background-image: url(../assets/illustration-hero-left.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contian;
+  overflow: hidden;
+}
+#hero-right {
+  position: absolute;
+  right: -18%;
+  width: 396px;
+  height: 444px;
+  background-image: url(../assets/illustration-hero-right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+#showcase .container {
+  padding: 5rem 0;
+}
+#showcase .container .flex-container {
+  display: flex;
+  height: 390px;
+}
+#showcase .container .flex-container .casepoint:nth-child(2n) {
+  justify-content: flex-end;
+}
+.casepoint {
+  flex-basis: 25%;
+  padding-right: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+}
+.casepoint .caseimage {
+  position: relative;
+  width: 160px;
+  height: 164px;
+  border-radius: 33%;
+  background-color: var(--bg-secondary);
+  margin-bottom: 1rem;
+}
+.casepoint .caseimage img {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+#item-1 img {
+  top: 20%;
+}
+#item-4 img {
+  top: 28%;
+  left: 19%;
+}
+/* SECTION PRICING PLANS */
+#pricing .container .flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#pricing-header {
+  width: 540px;
+  padding: 4rem 0;
+}
+#pricing-header h2 {
+  text-align: center;
+}
+#pricing-header p {
+  text-align: center;
+}
+#pricing .container .flex-container .flex-container-sub {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.card {
+  position: relative;
+  width: 445px;
+  border-radius: 12px;
+  padding: 0 2rem;
+}
+.card .m-font,
+.card p fs-col,
+.card .xl-font,
+.card ul li {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.card ul li {
+  padding-top: 0rem;
+}
+.card ul li svg {
+  margin-right: 0.5rem;
+}
+#plan-1 ul {
+  padding-bottom: 2rem;
+}
+#plan-1 .m-font {
+  padding-top: 3rem;
+}
+#plan-2 ul {
+  padding-bottom: 2.5rem;
+}
+#plan-2 .m-font {
+  padding-top: 4rem;
+}
+.card .xl-font {
+  padding-top: 2rem;
+}
+
+#plan-1 {
+  background-color: var(--bg-secondary);
+}
+#plan-2 {
+  background-color: var(--bg-primary);
+}
+
+#plan-1 > svg {
+  position: absolute;
+  top: -20px;
+}
+
+#plan-2 > svg {
+  position: absolute;
+  top: -35px;
+}
+#plan-2 .flex {
+  display: flex;
+  align-items: center;
+}
+#plan-2 .flex p {
+  padding-left: 0.5rem;
+}
+footer {
+  margin-bottom: 5rem;
+}
+footer svg {
+  position: absolute;
+  left: calc(50vw - 832.5px);
+  margin: 0 auto;
+  z-index: 0;
+}
+footer #form-email {
+  width: 730px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer #form-email * {
+  z-index: 1;
+}
+#form-email form {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+}
+#form-email form #error-msg {
+  position: absolute;
+  color: var(--fe-color);
+  font-size: 0.9rem;
+  font-weight: 700;
+  top: 55px;
+  left: 2rem;
+}
+#form-email form .cusform {
+  height: 50px;
+  border-radius: 25px;
+  border-style: none;
+  font-size: medium;
+  font-weight: 600;
+  font-family: 'Manrope', sans-serif;
+}
+#form-email form input {
+  width: 370px;
+  color: var(--fp-color);
+  background-color: var(--bg-secondary);
+  padding-left: 2rem;
+}
+#form-email form input:active,
+#form-email form input:hover,
+#form-email form input:focus {
+  outline: 2px solid var(--bg-primary);
+  cursor: pointer;
+}
+#form-email form input::placeholder {
+  color: var(--fp-color);
+}
+#form-email form button {
+  width: 150px;
+  background-color: var(--bg-primary);
+}
+#form-email form button:hover {
+  background-color: var(--bg-page);
+  color: var(--fp-color);
+  border: 2px solid var(--bg-primary);
+  cursor: pointer;
+}
+/* #form-email form input:invalid {
+  outline: 2px solid var(--fe-color);
+} */

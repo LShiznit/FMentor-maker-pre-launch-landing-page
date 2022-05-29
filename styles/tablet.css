@@ -1,0 +1,57 @@
+.container {
+  width: 768px;
+  margin: 0 auto;
+}
+#hero-content p {
+  padding-bottom: 2rem;
+}
+#hero-left {
+  left: -40%;
+}
+#hero-right {
+  right: -40%;
+}
+#showcase .container .flex-container {
+  flex-direction: column;
+  height: unset;
+}
+#showcase .container .flex-container .casepoint {
+  justify-content: flex-end;
+  margin-right: 2.5rem;
+}
+#showcase .container .flex-container .casepoint:nth-child(2n) {
+  justify-content: flex-start;
+  margin-left: 2.5rem;
+}
+.casepoint {
+  gap: unset;
+  display: grid;
+  grid-template-columns: 160px minmax(200px, 430px);
+  grid-template-rows: 1fr 1fr;
+  padding-bottom: 3rem;
+}
+.casepoint:last-child {
+  padding-bottom: 0;
+}
+.casepoint .caseimage {
+  margin-bottom: unset;
+  grid-area: 1 / 1 / 3 / 2;
+}
+.casepoint .caseimage img {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+.casepoint .m-font {
+  grid-area: 1 / 2 / 2 / 3;
+  align-self: center;
+  padding-left: 3rem;
+}
+.casepoint .fs-col {
+  grid-area: 2 / 2 / 3 / 3;
+  padding-left: 3rem;
+}
+#pricing .container .flex-container .flex-container-sub {
+  gap: 4rem;
+  flex-direction: column;
+}
